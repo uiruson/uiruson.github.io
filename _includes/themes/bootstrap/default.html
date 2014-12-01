@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/style.css" rel="stylesheet">
+  
+    <!--[if lt IE 9]>
+      <script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
+    <![endif]-->
+    
+    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+  <!-- HOME SECTION -->
+  <section id="home">
+   
+    <!--HOME CONTENT -->
+    <div class="container homeContent">
+      <div class="row">
+        <div class="col-md-12 jumbotron">
+          <h1>Hello</h1>
+          <p>My name is Wilson, and I'm your new web developer</p>
+          <br/> 
+        </div><!--END OF JUMBOTRON DIV-->
+      </div><!--END OF ROW DIV-->      
+    </div><!--END OF CONTAINER DIV-->
+    <!-- END OF HOME CONTENT -->
+
+    <!-- DOWN ARROW NAVIGATION -->
+    <div class="container arrowContainer">
+    <div class="row">
+      <div class="col-md-12">
+      <a class="smoothScroll" href="#about">
+        <i class="fa fa-angle-down fa-4x" style="color:#FFFFFF;margin-top:10px;"></i>
+      </a>
+      </div>
+    </div>
+      </div>
+      <!-- END OF DOWN ARROW NAVIGATION -->
+  </section>
+  <!-- END HOME SECTION -->
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    
+    <!-- ABOUT HEADER -->
+    <div class="container aboutHeader">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="sectionHeading">ABOUT</h2>
+      <p>Experienced web developer who constantly keeps up with new web technologies. Perfectionist mentality. <br/>Web geek and photography enthusiast with immense passion for making things look amazing.</p>
+      </div>
+    </div>
+    </div>
+    <!-- END OF ABOUT HEADER -->
+    
+    <!-- ABOUT CONTENT -->
+    <div class="container aboutContent">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Front-End</h3>
+        <p>HTML, CSS, LESS, SASS, JavaScript, jQuery, AngularJS, AJAX, Bootstrap</p>
+        <h3>Back-End</h3>
+        <p>C, C++, Java, Ruby</p>
+        <h3>Framework</h3>
+        <p>Sinatra, Ruby on Rails</p>
+      </div>
+      <div class="col-md-6">
+          <h3>Relational Database</h3>
+          <p>MySQL, PostgreSQL, Sqlite3</p>
+          <h3>Versioning System</h3>
+          <p>SVN, Git</p>
+          <h3>Other Technicals</h3>
+          <p>MS Office, AutoCAD, Dreamweaver, Photoshop, Lightroom, Balsamiq</p>
+      </div>
+    </div>
+    </div>
+    <!-- END OF ABOUT CONTENT -->
+    
+  </section>
+  <!-- END ABOUT SECTION -->
+
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio">
+  
+    <!-- PORTFOLIO HEADER -->
+    <div class="container portfolioHeader">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="sectionHeading">PORTFOLIO</h2>
+        </div>
+      </div>
+      <div class="portfolioContainer-1">
+        <div class="row">
+          <div class="col-md-6">
+            <a href="http://airport-central.herokuapp.com/" target="_blank">
+              <img src="/assets/images/portfolio-1.png" class="img-responsive">
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="http://vancouver-coffeeshop.herokuapp.com/#/" target="_blank">
+              <img src="/assets/images/portfolio-2.png" class="img-responsive">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolioContainer-2">
+        <div class="row">
+          <div class="col-md-6"><img src="/assets/images/portfolio-3.png" class="img-responsive"></div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+    </div><!--END OF PORTFOLIO HEADER-->
+    
+  </section>
+  <!-- END OF POTFOLIO SECTION -->
+  
+  <!--CONTACT US SECTION-->
+  <section id="contact">
+  
+  <!-- CONTACT CONTENT -->
+     <div class="container contactHeader">
+      <div class="row">
+      <div class="col-md-12">
+        <h2 class="sectionHeading">CONTACT</h2>  
+        <p><i class="fa fa-envelope-o"></i> Get in Touch with Me!</p>
+       </div>
+    </div>
+        
+        <div class="col-md-3 col-lg-3" class="background-color:black;"></div>
+        <!-- CONTACT FORM -->
+        <div class="col-md-6 col-lg-6">
+          <div class="row">
+            <form class="form-horizontal" method="post" action="mail.php" role="form" id="contactForm">
+            <div class="form-group">
+                <label for="inputName1" class="col-lg-2 control-label">Name<span style="color:#orange">*</span></label>
+                <div class="col-lg-6">
+                   <input type="text" class="form-control" id="senderName" placeholder="Name" name="name">
+                </div>
+             </div>
+             <div class="form-group">
+                <label for="inputEmail1" class="col-lg-2 control-label">Email<span style="color:#orange">*</span></label>
+                <div class="col-lg-6">
+                   <input type="email" class="form-control" id="senderEmail" placeholder="Email" name="email">
+                </div>
+             </div>
+             <div class="form-group">
+                <label for="inputMessage1" class="col-lg-2 control-label">Message<span style="color:#orange">*</span></label>
+                <div class="col-lg-9">
+                   <textarea class="form-control" rows="5" id="senderMessage" placeholder="Message" name="message"></textarea>
+                </div>
+             </div>
+             <div class="error-message"> </div><!--Error Message Placeholder-->
+             <div class="form-group">
+                <div class="col-lg-offset-2 col-md-4">
+                   <button type="submit" class="btn btn-warning pull-right">Send</button>
+                </div>
+             </div>
+            </form>
+
+             <!--Incomplete message-->
+                    <div class="incompleteMessageDiv">
+                       <p>Please complete all the fields in the form before sending</p>
+                    </div>
+
+                     <!--Sending Progress message-->
+                    <div class="sendingMessageDiv">
+                       <p>Sending Your Message...Please Wait</p>
+                    </div>
+
+                    <!--Thank you message-->
+                    <div class="thankYouMessageDiv">
+                       <span style="font-size:20px;">Thank you for your message!</span>
+                       <p>I'll get in touch with you soon</p>
+                    </div>
+
+
+                    <!--Failed message-->
+                    <div class="failedMessageDiv">
+                       <span style="font-size:20px;">There was a problem sending your message!</span>
+                       <p>Please try again</p>
+                    </div>
+          </div><!-- END OF ROW -->
+        </div><!-- END CONTACT FORM CONTAINER-->
+        <div class="col-md-3 col-lg-3" class="background-color:black;"></div>
+      </div>
+  <!-- END OF CONTACT CONTENT -->
+
+  </section>
+  <!--END OF CONTACT US SECTION-->
+
+  <!-- FOOTER SECTION -->
+  <section id="footer">
+    <div class="container">
+    <div class="row">
+      
+      <!-- COPYRIGHT -->
+      <div class="col-md-6">
+      <p class="copyright">&copy;2014 Vancouver Coffee Shops Guide</p>
+      </div>
+      <!-- END COPYRIGHT -->
+      
+      <!-- SOCIAL MEDIA SECTION-->
+      <div class="col-md-6">
+      <div class="social">
+        <a href="#"><img src="/assets/social/fb.png" class="img-circle" alt="facebook"></a>
+        <a href="#"><img src="/assets/social/twitter.png" class="img-circle" alt="twitter"></a>
+        <a href="#"><img src="/assets/social/googleplus.png" class="img-circle" alt="google"></a>
+        <a href="#"><img src="/assets/social/rss.png" class="img-circle" alt="rss"></a>
+      </div>
+      </div>
+      <!-- END SOCIAL MEDIA SECTION -->
+      
+    </div>
+    </div>
+  </section>
+  <!-- END OF FOOTER SECTION -->
+
+
+
+
+    {% include JB/analytics %}
+    <script src="{{ ASSET_PATH }}/resources/jquery/jquery.min.js"></script>
+    <script src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
