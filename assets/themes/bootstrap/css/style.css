@@ -137,18 +137,20 @@ h1,h2,h3,h4 {
 .portfolioContainer-1 img{
   border:12px solid #fff;
   margin-bottom: 30px;
+  transition: all 1.2s ease-in-out;
 }
 
 .portfolioContainer-1 img:hover{
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .portfolioContainer-2 img{
  border:12px solid #fff;
  margin-bottom: 30px;
+ transition: all 1.2s ease-in-out;
 }
 
 .portfolioContainer-2 img:hover{
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
